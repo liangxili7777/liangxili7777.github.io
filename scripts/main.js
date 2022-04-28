@@ -25,17 +25,17 @@ let line4 = document.getElementById("line4");
 clickHandler = (jobName) => {
 
     if(jobName==="debtReport"){
-        descriptiveText.innerHTML = "This is the description of Debt Report."
+        descriptiveText.innerHTML = "Debt report works out the debt level of single customer and can be filtered by a number of conditions, which enables a number of finance analysis to be done."
     } else if (jobName==="vacantReport"){
-        descriptiveText.innerHTML = "This is the description of Vacant Report."
+        descriptiveText.innerHTML = "Vacant consumption report sources data directly from raw metering data that helps convering the potential loss."
     } else if (jobName==="collectionReport"){
-        descriptiveText.innerHTML = "This is the description of Collection Report."
+        descriptiveText.innerHTML = "Collection report divides ages of debt for each customer, in a most efficient way in terms of runtime, that can be used for collection of debt."
     } else if (jobName==="billingReport"){
-        descriptiveText.innerHTML = "This is the description of Billing Report."
+        descriptiveText.innerHTML = "Billing report is a report indicating the billing performance each month, which gives idea of overall revenue and profit generation."
     } else if (jobName==="kaggle"){
-        descriptiveText.innerHTML = "This is the description of Kaggle competition."
+        descriptiveText.innerHTML = "Kaggle, a subsidiary of Google LLC, is an online community of data scientists and machine learning practitioners."
     } else if (jobName==="award"){
-        descriptiveText.innerHTML = "This is the description of Five Start reward."
+        descriptiveText.innerHTML = "Five start award won on 2017, voted by colleages company wide."
     }
 
     descriptiveBox.style.display = "flex";
