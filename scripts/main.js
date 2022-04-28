@@ -59,15 +59,21 @@ colorSideBar = () => {
     if (currentHeight <= firstBreak) {
         homeSide.style.backgroundColor = currentColor;
         aboutMeSide.style.backgroundColor = normalColor;
+        resumeSide.style.backgroundColor = normalColor;
+        contactSide.style.backgroundColor = normalColor;
     } else if (currentHeight > firstBreak && currentHeight <= secondBreak){
         homeSide.style.backgroundColor = normalColor;
         aboutMeSide.style.backgroundColor = currentColor;
         resumeSide.style.backgroundColor = normalColor;
+        contactSide.style.backgroundColor = normalColor;
     } else if (currentHeight > secondBreak && currentHeight <= thirdBreak){
+        homeSide.style.backgroundColor = normalColor;
         aboutMeSide.style.backgroundColor = normalColor;
         resumeSide.style.backgroundColor = currentColor;
         contactSide.style.backgroundColor = normalColor;
     } else {
+        homeSide.style.backgroundColor = normalColor;
+        aboutMeSide.style.backgroundColor = normalColor;
         resumeSide.style.backgroundColor = normalColor;
         contactSide.style.backgroundColor = currentColor;
     }
