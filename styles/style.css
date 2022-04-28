@@ -87,7 +87,7 @@ h1 {
 }
 
 .sideBarItem:hover {
-    background-color: var(--hover-background-color);
+    /* background-color: var(--hover-background-color); */
     cursor: pointer;
     color:var(--hover-color);
     /* z-index: 10; */
