@@ -15,12 +15,12 @@
     <!-- <link rel="stylesheet" href="../styles/contactStyle.css" /> -->
 </head>
 <body id="body">
-    <div id="menu"><img src="../assets/icon/menu-line.svg" alt="menu icon" /></div>
+    <div id="menu"><img src="./assets/icon/menu-line.svg" alt="menu icon" /></div>
     <div id="sidebar" class="chunk"> 
-        <img id="profilepicture" src="../assets/image/profilePicture.jpg" alt="profile picture" />
+        <img id="profilepicture" src="./assets/image/profilePicture.jpg" alt="profile picture" />
         <div class="navigation">
             <div class="sideBarItem" id="homeSide">
-                <img class="sideBarImage" src="../assets/icon/home-heart-fill.svg" alt="home icom" />
+                <img class="sideBarImage" src="./assets/icon/home-heart-fill.svg" alt="home icom" />
                 <div class="sideBarItem textbox">
                     <a class="sideBarItem textbox text" id="homeLink" href="#home">Home</a>
                     <p class="sideBarItem textbox description">Get to know me</p>
@@ -28,23 +28,31 @@
             </div>
             <div class="sidebar borderLine"></div>
             <div class="sideBarItem" id="aboutMeSide">
-                <img class="sideBarImage" src="../assets/icon/user-voice-fill.svg" alt="user female icon" />
+                <img class="sideBarImage" src="./assets/icon/user-voice-fill.svg" alt="user female icon" />
                 <div class="sideBarItem textbox">
                     <a class="sideBarItem textbox text" id="aboutMeLink" href="#aboutMe">About Me</a>
                     <p class="sideBarItem textbox description">Who I am</p>
                 </div>
             </div>
             <div class="sidebar borderLine"></div>
-            <div class="sideBarItem" id="resumeSide">
-                <img class="sideBarImage" src="../assets/icon/profile-fill.svg" alt="document icon" />
+            <div class="sideBarItem" id="historySide">
+                <img class="sideBarImage" src="./assets/icon/profile-fill.svg" alt="document icon" />
                 <div class="sideBarItem textbox">
-                    <a class="sideBarItem textbox text" id="resumeLink" href="#resume">Resume</a>
+                    <a class="sideBarItem textbox text" id="historyLink" href="#history">History</a>
                     <p class="sideBarItem textbox description">Experience</p>
                 </div>
             </div>
             <div class="sidebar borderLine"></div>
+            <div class="sideBarItem" id="resumeSide">
+                <img class="sideBarImage" src="./assets/icon/award-fill.svg" alt="award icon" />
+                <div class="sideBarItem textbox">
+                    <a class="sideBarItem textbox text" id="resumeLink" href="#resume">Achievements</a>
+                    <p class="sideBarItem textbox description">Achievements</p>
+                </div>
+            </div>
+            <div class="sidebar borderLine"></div>
             <div class="sideBarItem" id="contactSide">
-                <img class="sideBarImage" src="../assets/icon/contacts-book-2-fill.svg" alt="contact icon" />
+                <img class="sideBarImage" src="./assets/icon/contacts-book-2-fill.svg" alt="contact icon" />
                 <div class="sideBarItem textbox">
                     <a class="sideBarItem textbox text" id="contactLink" href="#contact">Contact</a>
                     <p class="sideBarItem textbox description">Get in Touch</p>
@@ -53,119 +61,181 @@
         </div>
     </div>
     <div id="mainContent" class="chunk">
-
         <section id="home">
             <h1 class="introduction header">Hello There!</h1>
             <p class="introduction">I am Data Analyst Teresa!</p>
             <ul class="social">
                 <li>
                     <a href="https://www.linkedin.com/in/teresa-x-151337b2/" target="_blank">
-                        <img src="../assets/icon/linkedin-fill.svg" alt="linkedin icon" />
+                        <img src="./assets/icon/linkedin-fill.svg" alt="linkedin icon" />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="../assets/icon/facebook-fill.svg" alt="facebook icon">
+                        <img src="./assets/icon/facebook-fill.svg" alt="facebook icon">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="../assets/icon/instagram-fill.svg" alt="instgram icon">
+                        <img src="./assets/icon/instagram-fill.svg" alt="instgram icon">
                     </a>
                 </li>
                 <li>
                     <a href="https://twitter.com" target="_blank">
-                        <img src="../assets/icon/twitter-fill.svg" alt="twitter icon">
+                        <img src="./assets/icon/twitter-fill.svg" alt="twitter icon">
                     </a>
                 </li>
-                <li></li>
+                <li>
+                    <a href="../assets/files/Profile.pdf" target="_blank">
+                        <img src="./assets/icon/cv.svg" alt="CV icon">
+                    </a>
+                </li>
             </ul>
         </section>
         <div class="section borderLine" id="line1"></div>
-        <section id="aboutMe">
-                <h1>About Me</h1>
-                <p class="selfDescription">I'm Teresa! I'm currently working full time as a data analyst at one of the biggest energy companies based in Melbourne.
-                     I've three years work experience as a data analyst and two years as an IT support
-                    , even though I wasn't majored in IT. I'm passionate about data analysis and I believe it is the most sexy job in this century!</p>
+        <section id="aboutMe" class="about">
+            <div class="about skills">
+                <div class="about description">
+                    <h1>About Me</h1>
+                    <div class="paragraph">
+                        <p class="selfDescription">I'm Teresa! I'm currently working full time as a data analyst at one of the biggest energy companies based in Melbourne.
+                            I've three years work experience as a data analyst and two years as an IT support
+                            , even though I wasn't majored in IT. I'm passionate about data analysis and I believe it is the most sexy job in this century!</p>
+                    </div>
+                </div>
+                <div id="skill">
+                    <h3>My Skills</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/icon/Database-mysql.svg" alt="SQL icon">
+                            <p>Relational Database</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/mongodb-svgrepo-com.svg" alt="mongo icon">
+                            <p>No-SQL</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/New_Power_BI_Logo.svg" alt="power bi icon">
+                            <p>Power BI</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/logo-tableau-svgrepo-com.svg" alt="tableau icon">
+                            <p>Tableau</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/python-package-index-svgrepo-com.svg" alt="python icon">
+                            <p>Python</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <div id="capability">
+                    <h3>What I can do</h3>
+                    <ul>
+                        <li>
+                            <img src="./assets/icon/Database-mysql.svg" alt="SQL icon">
+                            <p>Relational Database Design</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/mongodb-svgrepo-com.svg" alt="mongo icon">
+                            <p>No-SQL Database Design</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/data-science.svg" alt="data science icon">
+                            <p>Data modelling</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/analysis-svgrepo-com.svg" alt="data analysis icon">
+                            <p>Data Visualization</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/python-package-index-svgrepo-com.svg" alt="python icon">
+                            <p>Python Scripting & Development</p>
+                        </li>
+                        <li>
+                            <img src="./assets/icon/Microsoft_Excel-Logo.wine.svg" alt="python icon">
+                            <p>Excel & VBA Programming</p>
+                        </li>
+                    </ul>
+                </div>
         </section>
         <div class="section borderLine" id="line2"></div>
-        <section id="resume">
-            <div class="subgrid">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Relational Database</li>
-                    <li>No-SQL</li>
-                    <li>Power BI</li>
-                    <li>Python</li>
-                </ul>
-            </div>
-            <div class="subgrid achievement">
-                <h2>Achievement</h2>
-                <ul id="achievementList">
-                    <li id="award">5 Start Rewards of 2017</li>
-                    <li id="kaggle">Kaggle Competitor</li>
-                    <li id="debtReport">Debot Tracking Report</li>
-                    <li id="vacantReport">Vacant Consumption Report</li>
-                    <li id="collectionReport">Collection Cycle Report</li>
-                    <li id="billingReport">Billing Performance Report</li>
-                </ul>
-                <div id="descriptiveBox">
-                    <div class="descriptiveFlex">
-                        <p id="descriptiveText"></p>
-                        <div id="closeButton">
-                            <img id="crossIcon" src="../assets/icon/close-line.svg" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section id = "history">
             <div class="subgrid experience">
-                <div class="subgrid row"> 
-                    <h3 class="experience title">Education</h3>
-                    <h3 class="experience title">Work</h3>
-                </div>
-                <div class="subgrid row">
-                    <div class="left">
-                        <p>Tianjin University</p>
-                    </div>
-                    <div class="subgrid time right">
-                        <p>2008</p>
-                    </div>
-                </div>
-                <div class="subgrid row">
-                    <div class="left">
-                        <p>University of Melbourne</p>
-                    </div>
-                    <div class="subgrid time right">
-                        <p>2012</p>
-                    </div>
-                </div>
-                <div class="subgrid row">
-                    <div class="subgrid time left">
-                        <p>2015</p>
-                    </div>
-                    <div class="right">
-                        <p>Billing Officer - WINconnect</p>
-                    </div>
-                </div>
-                <div class="subgrid row">
-                    <div class="subgrid time left">
-                        <p>2018</p>
-                    </div>
-                    <div class="right">
-                        <p>Data Analyst - WINconnect</p>
-                    </div>
-                </div>
-            </div>
-            <div class="subgrid">
-                <h2>Link</h2>
-                <ul>
+                <h2>Experience</h2>
+                <ul class="timeline">
                     <li>
-                        <a href="../assets/files/Profile.pdf" target="_blank">Download CV</a>
+                        <div class="listElement">
+                            <img class="timeline logo university" src="./assets/icon/Tianjin_university.png" alt="Tianjin University logo">
+                            <div class="time">
+                                <p>2008 - 2012</p>
+                                <p>TianJin University - Bachelor of Accounting</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listElement">
+                            <img class="timeline logo university" src="./assets/icon/melbourne_university.png" alt="University of Melbourne logo">
+                            <div class="time">
+                                <p>2012 - 2014</p>
+                                <p>University Of Melbourne - Master of Management Accounting</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listElement">
+                            <img class="timeline logo winconnect" src="./assets/icon/winconnect.png" alt="winconnect logo">
+                            <div class="time">
+                                <p>2016 - 2018</p>
+                                <p>WINconnect - Billing Officer</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="listElement">
+                            <img class="timeline logo winconnect" src="./assets/icon/winconnect.png" alt="winconnect logo">
+                            <div class="time">
+                                <p>2018 - current</p>
+                                <p>WINconnect - Data Analyst</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
         </section>
         <div class="section borderLine" id="line3"></div>
+        <section id="resume">
+            <div class="subgrid achievement">
+                <h2>Achievement</h2>
+                <ul class="list-group" id="achievementList">
+                    <li id="award" class="list-group-item">5 Start Rewards of 2017</li>
+                    <li id="kaggle" class="list-group-item">Kaggle Competition</li>
+                    <li id="debtReport" class="list-group-item">Debt Tracking Report</li>
+                    <li id="vacantReport" class="list-group-item">Vacant Consumption Report</li>
+                    <li id="collectionReport" class="list-group-item">Collection Cycle Report</li>
+                    <li id="billingReport" class="list-group-item">Billing Performance Report</li>
+                  </ul>
+                <div id="fadedBackground">
+                    <div id = "descriptiveBox2">
+                        <div id = "descriptiveBoxBanner">
+                            <h3>Description</h3>
+                            <div id="closeButton">
+                                <img id="crossIcon" src="../assets/icon/close-line.svg" />
+                            </div>
+                        </div>
+                        <div class="descriptive borderLine"></div>
+                        <p id="descriptiveText2"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery borderLine2"></div>
+            <div id="gallery">
+                <img class="portfolioImage" src="./assets/image/graduate.jpeg" alt="graduate image">
+                <img class="portfolioImage" src="./assets/image/mother.jpeg" alt="mother image">
+                <img class="portfolioImage" src="./assets/image/colleage.jpeg" alt="colleage image">
+            </div>
+        </section>
+        <div class="section borderLine" id="line4"></div>
         <section id="contact">
             <div id="contacttop"></div>
             <div id="contactcard">
@@ -205,7 +275,6 @@
                 </form>
             </div>
         </section>
-        <div class="section borderLine" id="line4"></div>
     </div>
     <script src="./scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
