@@ -149,7 +149,7 @@ award.addEventListener('click',clickHandler.bind(this,"award"));
 kaggle.addEventListener('click',clickHandler.bind(this,"kaggle"));
 crossIcon.addEventListener('click',()=>{descriptiveBox.style.display = "none"})
 descriptiveBox.addEventListener('click',(event) => {
-    if (event.srcElement.id !== 'descriptiveBox2'){
+    if (event.srcElement.id !== 'descriptiveBox2' && event.srcElement.id !== 'descriptiveText2' && event.srcElement.id !== 'descriptiveBoxBanner'){
         descriptiveBox.style.display = "none";}})
 document.addEventListener('scroll',colorSideBar);
 
