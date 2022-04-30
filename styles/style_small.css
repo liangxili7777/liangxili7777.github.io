@@ -221,6 +221,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 #skill ul li{
     display: flex;
@@ -260,8 +261,9 @@ h1 {
 #capability ul{
     list-style: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -294,9 +296,8 @@ h1 {
 }
 
 .selfDescription {
-    padding-top: 3%;
-    padding-left: 10%;
-    max-width: 60%;
+    padding-top: 5%;
+    padding-left: 5%;
     font-style: italic;
 }
 
@@ -523,6 +524,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     padding-bottom: 2%;
+    gap:3vh;
 }
 
 .portfolioImage{
